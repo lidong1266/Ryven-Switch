@@ -1,46 +1,36 @@
-# A simple flow-based visual scripting runtime environment for Python
+# Note: This is a fork project of leon-thomm/Ryven! 
 
-Ey, what's up! Please visit the [website](https://ryven.org)
+# The target of this project
+It is to build an GUI tool for network switch programming and configuring.
+
+# Quick start
+## Environment for Python
 
 ### Basic Requirements
-
-- Python 3 (3.8+ recommended)
-- PySide2 (2.14+ recommended)
++ OS: Windows, Linux, MacOs
++ Python and Libs
+  - Python 3 (3.8+ recommended)
+  - PySide2 (2.14+ recommended)
+  - matplotlib
+  - numpy==1.19.3
+  - opencv-python
+  - scipy
+  - pyowm
+  - qbstyles
+  - autopep8
 
 ### Installation
 
-- please use the lastest release
-- a complete requirements file is in the root folder
-- If you experiment a lot, you maybe should set up a virtual env, like this (Windows example):
 ```
-<open cmd>
-cd <to your Ryven folder (the outer one)>
-python -m venv venv
-venv/Scripts/activate
-pip install -r requirements.txt
+apt install python3
+apt install python3-pip
+pip3 install -r requirements.txt
 ```
 
-### Ideas and TODOs
-- advanced source code editor widget, with syntax highlighting and autocomplete for Ryven, the NodeManager and an intuitive *code* node (where one can just program the node inside the editor by writing the code into the widget)
-- visual content: logos and splash screen
-- a visually appealing Jupyter integration (the native Jupyter QtConsole I didn't like in terms of appearence and functionality)
+### ToDo List
++ Support network switch capability file load from JSON file
++ Support Table (TCAM/HASH Lookup table, SRAM Action table), Rhombic(CSR), Rectangle(ALU), shapes based on Ryven
++ Support table smart connections 
++ Support UI translating to Python code and JSON file
++ Support translating Python code and JSON file to c code
 
-![](/docs/images/ryven_screenshot2.png)
-
-![](/docs/images/ui.png)
-
-![](/docs/images/ryven1.png)
-
-![](/docs/images/matrices1.png)
-
-![](/docs/images/checkpoints.png)
-
-![](/docs/images/matplotlib.jpeg)
-
-![](/docs/images/opencv_1.png)
-
-![](/docs/images/matrices2.png)
-
-![](/docs/images/extract_property_1.png)
-
-![](/docs/images/random.png)
